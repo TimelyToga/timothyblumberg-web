@@ -1,17 +1,42 @@
+html {
+    font-family:"rooney-web",sans-serif;
+    color: dimgray;
+}
+
 .header {
-   color: white;
+   /*color: white;*/
    text-align: center;
-   font: bold 36px/45px Helvetica, Sans-Serif;
+   font: bold 36px/45px; /*Helvetica, Sans-Serif;*/
    background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
+   background: rgba(0, 0, 0, 0.1);
+   /*padding: 10px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   width: 100%;
 }
 
 .projects {
-   color: white;
-   font: Helvetica, Sans-Serif;
+   /*color: white;*/
+   /*font: Helvetica, Sans-Serif;*/
    background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
+   background: rgba(0, 0, 0, 0.1);
    padding: 8px;
-   margin: 10px;
+   margin-bottom: 10px;
+   /*margin: 10px;*/
+}
+
+.page_wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.body_wrapper {
+    max-width: 100%;
+    text-align: left;
+}
+
+.projects_wrapper {
+    max-width: 100%;
+    min-width: 500px;
+    text-align: left;
 }
