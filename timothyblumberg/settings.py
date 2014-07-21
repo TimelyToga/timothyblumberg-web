@@ -12,11 +12,12 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 APP_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'app'))
-STATIC_DIR = os.path.abspath(os.path.join(APP_DIR, 'static'))
+STATIC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'static'))
+# STATIC_DIR = os.path.abspath(os.path.join(BASE_DIR, 'static'))
 FONTS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'fonts'))
 FAVICON = os.path.abspath(os.path.join(APP_DIR, 'static', 'favicon.ico'))
 JS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'js'))
-CSS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'css'))
+CSS_DIR = os.path.abspath(os.path.join(STATIC_DIR, 'css'))
 SCSS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'scss'))
 IMG_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'img'))
 
