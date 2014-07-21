@@ -1,0 +1,1 @@
+web: gunicorn timothyblumberg.wsgi --log-file -
