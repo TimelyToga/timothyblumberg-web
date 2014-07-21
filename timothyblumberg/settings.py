@@ -11,6 +11,18 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+APP_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'app'))
+STATIC_DIR = os.path.abspath(os.path.join(APP_DIR, 'static'))
+FONTS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'fonts'))
+FAVICON = os.path.abspath(os.path.join(APP_DIR, 'static', 'favicon.ico'))
+JS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'js'))
+CSS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'css'))
+SCSS_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'scss'))
+IMG_DIR = os.path.abspath(os.path.join(APP_DIR, 'static', 'img'))
+
+
+TEMPLATE_DIRS = os.path.abspath(os.path.join('timothyblumberg', 'templates'))
+
 
 
 # Quick-start development settings - unsuitable for production
