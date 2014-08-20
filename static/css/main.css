@@ -4,25 +4,35 @@ html {
 }
 
 .header {
-   /*color: white;*/
-   text-align: center;
-   font: bold 36px/45px; /*Helvetica, Sans-Serif;*/
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.1);
-   /*padding: 10px;*/
-    padding-top: 10px;
+    text-align: center;
+    font: bold 36px/45px; /*Helvetica, Sans-Serif;*/
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
     padding-bottom: 10px;
-   width: 100%;
+    width: 100%;
+}
+
+.nametag {
+    margin: 7px;
+}
+
+div.my-shit {
+    display:table;
+    width:100%;
+    table-layout: fixed;
+}
+
+div.my-shit a {
+    display:table-cell;
+    text-align:center;
 }
 
 .projects {
-   /*color: white;*/
-   /*font: Helvetica, Sans-Serif;*/
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.1);
-   padding: 8px;
-   margin-bottom: 10px;
-   /*margin: 10px;*/
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
 .page_wrapper {
