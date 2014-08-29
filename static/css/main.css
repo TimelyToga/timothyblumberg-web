@@ -18,12 +18,11 @@ html {
     margin: 7px;
 }
 
-div.my-shit {
-    width:50%;
-    float: right;
+div.cool-links {
+    float: right !important;
 }
 
-div.my-shit a {
+div.cool-links a {
     display:block;
     text-align:center;
 }
@@ -36,6 +35,7 @@ div.my-shit a {
     padding-top: 1px;
     padding-bottom: 1px;
     border: 4px solid  #6c6c6c;
+    overflow: hidden
 }
 
 .projects h1 {
@@ -88,4 +88,14 @@ div.my-shit a {
 .title-img {
     height: 100px;
     float: left;
+}
+
+div.body-links {
+    float: left;
+    display: inline-block;
+}
+
+div.body-links a {
+    display:block;
+    text-align:center;
 }
