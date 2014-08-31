@@ -11,6 +11,7 @@ html {
     float: left;
     padding: 10px;
     border: 4px solid  #6c6c6c;
+    border-radius: 8px;
 }
 
 .nametag {
@@ -35,7 +36,8 @@ div.cool-links a {
     padding-top: 1px;
     padding-bottom: 1px;
     border: 4px solid  #6c6c6c;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .projects h1 {
@@ -64,7 +66,6 @@ div.cool-links a {
 .menu-item {
     margin-left: 5px;
     margin-right: 5px;
-    border: 3px;
     position: relative;
     display: inline-block;
     float: right;
@@ -77,6 +78,7 @@ div.cool-links a {
     border: 3px solid #6c6c6c;
     font-weight: bold;
     padding: 2px 5px;
+    border-radius: 6px;
 }
 
 .menu-item a:hover {
