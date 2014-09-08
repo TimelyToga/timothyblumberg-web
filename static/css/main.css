@@ -1,5 +1,5 @@
 html {
-    font-family:"rooney-web",sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: dimgray;
 }
 
@@ -14,23 +14,95 @@ html {
     border-radius: 8px;
 }
 
+.header-column {
+    height: 100px;
+    float:left;
+}
+
+#image-column {
+    width: 30%;
+}
+
+#links-column {
+    width: 70%;
+}
+
 .nametag {
     display: block;
     margin: 7px;
 }
 
-div.cool-links {
+div.cool-links-container {
+    width: 100%;
+    height: 100%;
     float: right !important;
 }
 
-div.cool-links a {
+ul.cool-links-list {
+    height: 100%;
     display:block;
-    text-align:center;
+    margin: 0px auto;
+}
+
+.menu-item {
+    position: relative;
+    float: right;
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    display: inline-block;
+    color: #6c6c6c;
+    border: 3px solid #6c6c6c;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.menu-item a:hover {
+  color: #fff;
+  background: #6c6c6c;
+  text-decoration: none;
+}
+
+ul.body-links-list {
+    display:block;
+    margin: 0px auto;
+}
+
+.body-menu-item {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.body-menu-item > a {
+    text-decoration: none;
+    display: inline-block;
+    color: #6c6c6c;
+    border: 3px solid #6c6c6c;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.body-menu-item a:hover {
+  color: #fff;
+  background: #6c6c6c;
+  text-decoration: none;
+}
+
+.title-img {
+    height: 100px;
+    float: left;
 }
 
 .projects {
-    /*background: rgb(0, 0, 0); *//* fallback color */
-    /*background: rgba(215, 169, 98, 0.5);*/
     margin-bottom: 16px;
     padding-left: 10px;
     padding-top: 1px;
@@ -63,41 +135,12 @@ div.cool-links a {
     text-align: left;
 }
 
-.menu-item {
-    margin-left: 5px;
-    margin-right: 5px;
-    position: relative;
-    display: inline-block;
-    float: right;
-}
-
-.menu-item > a {
-    text-decoration: none;
-    display: inline-block;
-    color: #6c6c6c;
-    border: 3px solid #6c6c6c;
-    font-weight: bold;
-    padding: 2px 5px;
-    border-radius: 6px;
-}
-
-.menu-item a:hover {
-  color: #fff;
-  background: #6c6c6c;
-  text-decoration: none;
-}
-
-.title-img {
-    height: 100px;
-    float: left;
-}
-
-div.body-links {
+div.body-links-container {
     float: left;
     display: inline-block;
 }
 
-div.body-links a {
+div.body-links-container a {
     display:block;
     text-align:center;
 }
