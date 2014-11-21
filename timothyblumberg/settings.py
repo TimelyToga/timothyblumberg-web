@@ -24,8 +24,6 @@ IMG_DIR = os.path.abspath(os.path.join(STATIC_DIR, 'img'))
 
 TEMPLATE_DIRS = os.path.abspath(os.path.join('timothyblumberg', 'templates'))
 
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
