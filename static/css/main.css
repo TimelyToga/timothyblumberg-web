@@ -72,6 +72,7 @@ ul.cool-links-list {
 ul.body-links-list {
     display:block;
     margin: 0px auto;
+    list-style-type: none;
 }
 
 .body-menu-item {
