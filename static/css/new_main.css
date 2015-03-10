@@ -1,0 +1,154 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    color: dimgray;
+    background-color: #034768;
+}
+
+.my-navbar > li > a:hover {
+  background: #aa33bb;
+  font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    padding: 10px;
+    border: 4px solid  #6c6c6c;
+    border-radius: 8px;
+}
+
+.header-column {
+    height: 100px;
+    float:left;
+}
+
+#image-column {
+    width: 30%;
+}
+
+#links-column {
+    width: 70%;
+}
+
+.nametag {
+    display: block;
+    margin: 7px;
+}
+
+div.cool-links-container {
+    width: 100%;
+    height: 100%;
+    float: right !important;
+}
+
+ul.cool-links-list {
+    height: 100%;
+    display:block;
+    margin: 0px auto;
+    list-style-type: none;
+}
+
+.menu-item {
+    position: relative;
+    float: right;
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    display: inline-block;
+    color: #6c6c6c;
+    border: 3px solid #6c6c6c;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.menu-item a:hover {
+  color: #fff;
+  background: #6c6c6c;
+  text-decoration: none;
+}
+
+ul.body-links-list {
+    display:block;
+    margin: 0px auto;
+    list-style-type: none;
+}
+
+.body-menu-item {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.body-menu-item > a {
+    text-decoration: none;
+    display: inline-block;
+    color: #6c6c6c;
+    border: 3px solid #6c6c6c;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.body-menu-item a:hover {
+  color: #fff;
+  background: #6c6c6c;
+  text-decoration: none;
+}
+
+.title-img {
+    height: 100px;
+    float: left;
+}
+
+.projects {
+    margin-bottom: 16px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 4px solid  #6c6c6c;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.projects h1 {
+    padding-top: 5px;
+}
+
+.page_wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.body_wrapper {
+    max-width: 100%;
+    text-align: left;
+    padding-top: 50px;
+    clear: both;
+}
+
+.projects_wrapper {
+    padding-top: 50px;
+    max-width: 100%;
+    min-width: 500px;
+    text-align: left;
+}
+
+div.body-links-container {
+    float: left;
+    display: inline-block;
+}
+
+div.body-links-container a {
+    display:block;
+    text-align:center;
+}
