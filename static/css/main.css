@@ -2,26 +2,31 @@ html {
     font-family: 'Raleway', sans-serif;
     color: white;
     background-color: 000000;
+    padding: 0;
+}
+body {
+    margin: 0;
 }
 
 #bod_wrapper {
     opacity: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .header {
     text-align: center;
-    height: 200px;
-    width: 800px;
-    margin: 20 auto;
+    color: black;
+    background-color: white;
+    height: 100px;
+    width: 100%;
     position: relative;
     float: left;
-    padding: 10px;
-    border: 4px solid  #ffffff;
     border-radius: 1px;
 }
 
 .header-column {
-    height: 100px;
     float:left;
 }
 
@@ -39,40 +44,35 @@ html {
 }
 
 div.cool-links-container {
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: grid;
-    float: right !important;
-}
-
-ul.cool-links-list {
-    height: 100%;
-    display:block;
-    margin: 0px auto;
-    list-style-type: none;
+    bottom: 2px;
+    padding: 5px;
 }
 
 .menu-item {
     position: relative;
-    float: right;
-    margin-top: 4px;
-    margin-left: 3px;
-    margin-right: 3px;
+    display: inline-block;
+    float: left;
+    border: 2px solid #000;
+    font-weight: bold;
+    border-radius: 1px;
+    height: 100%;
+    margin: 0 2px;
 }
 
 .menu-item > a {
     text-decoration: none;
     display: block;
-    color: #ffffff;
-    border: 3px solid #ffffff;
-    font-weight: bold;
-    border-radius: 1px;
-    padding: 6px 4px;
+    color: #000;
+    height: 100%;
 }
 
 .menu-item a:hover {
-  color: #000;
-  background: #ffffff;
+  color: #fff;
+  background: #000;
   text-decoration: none;
 }
 
@@ -88,6 +88,7 @@ ul.body-links-list {
     margin-top: 4px;
     margin-left: 3px;
     margin-right: 3px;
+    height: 25%;
 }
 
 .body-menu-item > a {
@@ -98,6 +99,7 @@ ul.body-links-list {
     font-weight: bold;
     padding: 2px 5px;
     border-radius: 6px;
+    height: 25%;
 }
 
 .body-menu-item a:hover {
@@ -107,8 +109,10 @@ ul.body-links-list {
 }
 
 .title-img {
-    height: 200px;
-    margin: 0 auto;
+    float: left;
+    vertical-align: middle;
+    height: 80%;
+    margin: 10px;
 }
 
 .projects {
@@ -174,5 +178,5 @@ div.body-links-container a {
 }
 
 .col-1-4 {
-    width: 25%;
+    width: 150px;
 }
