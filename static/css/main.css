@@ -1,17 +1,23 @@
 html {
     font-family: 'Raleway', sans-serif;
-    color: dimgray;
+    color: white;
+    background-color: 000000;
+}
+
+#bod_wrapper {
+    opacity: 0;
 }
 
 .header {
     text-align: center;
+    height: 200px;
     width: 800px;
-    margin: 0 auto;
+    margin: 20 auto;
     position: relative;
     float: left;
     padding: 10px;
-    border: 4px solid  #6c6c6c;
-    border-radius: 8px;
+    border: 4px solid  #ffffff;
+    border-radius: 1px;
 }
 
 .header-column {
@@ -35,6 +41,7 @@ html {
 div.cool-links-container {
     width: 100%;
     height: 100%;
+    display: grid;
     float: right !important;
 }
 
@@ -55,17 +62,17 @@ ul.cool-links-list {
 
 .menu-item > a {
     text-decoration: none;
-    display: inline-block;
-    color: #6c6c6c;
-    border: 3px solid #6c6c6c;
+    display: block;
+    color: #ffffff;
+    border: 3px solid #ffffff;
     font-weight: bold;
-    padding: 2px 5px;
-    border-radius: 6px;
+    border-radius: 1px;
+    padding: 6px 4px;
 }
 
 .menu-item a:hover {
-  color: #fff;
-  background: #6c6c6c;
+  color: #000;
+  background: #ffffff;
   text-decoration: none;
 }
 
@@ -86,8 +93,8 @@ ul.body-links-list {
 .body-menu-item > a {
     text-decoration: none;
     display: inline-block;
-    color: #6c6c6c;
-    border: 3px solid #6c6c6c;
+    color: #ffffff;
+    border: 3px solid #ffffff;
     font-weight: bold;
     padding: 2px 5px;
     border-radius: 6px;
@@ -100,8 +107,8 @@ ul.body-links-list {
 }
 
 .title-img {
-    height: 100px;
-    float: left;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .projects {
@@ -109,7 +116,7 @@ ul.body-links-list {
     padding-left: 10px;
     padding-top: 1px;
     padding-bottom: 1px;
-    border: 4px solid  #6c6c6c;
+    border: 4px solid  #EAEAEA;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -145,4 +152,27 @@ div.body-links-container {
 div.body-links-container a {
     display:block;
     text-align:center;
+}
+
+.logo {
+    opacity: 0;
+    height: 90%;
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width .75s ease, height .75s ease;
+}
+
+
+.sm_logo {
+    height: 0%;
+    display: float;
+}
+
+.col-1-4 {
+    width: 25%;
 }
