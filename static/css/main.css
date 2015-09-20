@@ -26,6 +26,11 @@ body {
     border-radius: 1px;
 }
 
+#header_name {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
 .header-column {
     float:left;
 }
