@@ -135,6 +135,7 @@ ul.body-links-list {
 
 .page_wrapper {
     width: 65%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
