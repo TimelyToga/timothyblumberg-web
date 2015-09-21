@@ -176,6 +176,15 @@ div.body-links-container a {
 	transition: width .75s ease, height .75s ease;
 }
 
+.logo:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.logo_wrapper {
+    text-align: center;
+}
+
 
 .sm_logo {
     height: 0%;
