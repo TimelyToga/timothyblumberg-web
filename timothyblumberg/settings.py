@@ -31,7 +31,7 @@ TEMPLATE_DIRS = os.path.abspath(os.path.join('timothyblumberg', 'templates'))
 SECRET_KEY = 'dx*ywrdb050t9e69%=2s9_q43l3sc)+&06tpu25g46cba&(#8!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 TEMPLATE_DEBUG = True
 
