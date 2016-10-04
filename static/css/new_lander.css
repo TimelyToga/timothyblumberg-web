@@ -1,0 +1,67 @@
+#nav_list {
+    font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma";
+    font-size: 14pt;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    margin: 0 40px;
+    -webkit-animation-delay: 1s;
+}
+
+#nav_list > li {
+    height: 120px;
+    margin: 0 10px;
+    float: left;
+}
+
+#nav_list > li > a {
+    line-height: 120px;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    color: lightslategray;
+    font-size: 20pt;
+}
+
+#nav_list > li:hover > * {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+#name_logo {
+    height: 120px;
+    display: inline-block;
+   -webkit-animation-delay: 0.5s;
+}
+
+.navbar-container {
+    height: 120px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.intro-text > p {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    font-size: 72pt;
+}
+
+#intro-hi {
+   -webkit-animation-delay: 1.5s;
+}
+
+#intro-im {
+   -webkit-animation-delay: 1.75s;
+}
+
+#intro-name {
+   -webkit-animation-delay: 2.25s;
+}
+
+#body_container {
+    margin: 120px 170px;
+
+}
+

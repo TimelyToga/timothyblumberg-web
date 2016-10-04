@@ -6,6 +6,10 @@ import timothyblumberg.settings
 
 urlpatterns = patterns('',
     url(r'^$', 'timothyblumberg.views.home'),
+    url(r'^new_lander$', 'timothyblumberg.views.new_lander'),
+    url(r'^skills', 'timothyblumberg.views.skills'),
+    url(r'^resume', 'timothyblumberg.views.resume'),
+    url(r'^juneway', 'timothyblumberg.views.juneway'),
     url(r'^about$', 'timothyblumberg.views.about'),
 
     (r'^css/(?P<path>.*)$', 'django.views.static.serve', {'document_root': timothyblumberg.settings.CSS_DIR}),
