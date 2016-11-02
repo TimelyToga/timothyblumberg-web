@@ -53,15 +53,29 @@
 }
 
 #intro-im {
-   -webkit-animation-delay: 1.75s;
+   -webkit-animation-delay: 2.1s;
 }
 
 #intro-name {
-   -webkit-animation-delay: 2.25s;
+   -webkit-animation-delay: 2.6s;
+}
+
+#body_container_main {
+    padding: 100px 0 0 80px;
 }
 
 #body_container {
-    margin: 120px 170px;
-
+    padding: 80px 80px;
 }
 
+h1 {
+    font-size: 46pt;
+}
+
+.pbar {
+    margin: 45px;
+    width: 75%;
+    height: 20px;
+    position: relative;
+    top: 30px;
+}

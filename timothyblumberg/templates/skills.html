@@ -1,5 +1,30 @@
 {% extends "new_lander.html" %}
 
+{% block scripts %}
+    <script src="/js/progressbar.min.js"></script>
+    <script src="/js/new_lander.js"></script>
+{% endblock scripts %}
+
 {% block main_body %}
     <h1>Skills</h1>
+    <h3>of which I have many</h3>
+
+    <div>
+        <h2>Languages</h2>
+        <div class="skill_group_wrapper">
+            <div class="pbar" id="java">Java</div>
+            <div class="pbar" id="python">Python</div>
+            <div class="pbar" id="scala">Scala</div>
+            <div class="pbar" id="matlab">Matlab</div>
+        </div>
+
+        <h2>Languages</h2>
+            <div class="skill_group_wrapper">
+                <div class="pbar" id="java">Java</div>
+                <div class="pbar" id="python">Python</div>
+                <div class="pbar" id="scala">Scala</div>
+                <div class="pbar" id="matlab">Matlab</div>
+            </div>
+
+    </div>
 {% endblock %}
