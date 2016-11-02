@@ -11,8 +11,8 @@ var curDelay = delayStartingValue;
 
 // Scroll trigger locations (in pixels)
 var fadeLanguagePos = 160;
-var fadeToolsPos = 610;
-var fadePlatformsPos = 800;
+var fadeToolsPos = 600;
+var fadePlatformsPos = 850;
 
 
 // Current group color
