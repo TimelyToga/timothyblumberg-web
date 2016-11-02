@@ -8,23 +8,39 @@
 {% block main_body %}
     <h1>Skills</h1>
     <h3>of which I have many</h3>
+    <h4 id="hint_text">Scroll Down for more!</h4>
 
-    <div>
-        <h2>Languages</h2>
-        <div class="skill_group_wrapper">
-            <div class="pbar" id="java">Java</div>
+    <div class="center">
+        <div class="skill_group_wrapper1" id="sg_languages">
+            <h2>Languages</h2>
+            <div class="pbar" id="java">Java / JavaFX</div>
             <div class="pbar" id="python">Python</div>
             <div class="pbar" id="scala">Scala</div>
             <div class="pbar" id="matlab">Matlab</div>
+            <div class="pbar" id="c_lang">C / C++</div>
+            <div class="pbar" id="sql">SQL</div>
+            <div class="pbar" id="js">JavaScript</div>
         </div>
 
-        <h2>Languages</h2>
-            <div class="skill_group_wrapper">
-                <div class="pbar" id="java">Java</div>
-                <div class="pbar" id="python">Python</div>
-                <div class="pbar" id="scala">Scala</div>
-                <div class="pbar" id="matlab">Matlab</div>
-            </div>
+        <div class="skill_group_wrapper" id="sg_tools">
+            <h2>Tools / Frameworks</h2>
+            <div class="pbar" id="django">Django</div>
+            <div class="pbar" id="flask">Flask</div>
+            <div class="pbar" id="latex">LaTeX</div>
+            <div class="pbar" id="git">Git</div>
+            <div class="pbar" id="spark">Spark</div>
+        </div>
+
+        <div class="skill_group_wrapper" id="sg_platforms">
+            <h2>Tools / Frameworks</h2>
+            <div class="pbar" id="android">Android</div>
+            <div class="pbar" id="web">Web</div>
+            <div class="pbar" id="ios">iOS</div>
+        </div>
+
+        <div id="page_closer">
+            <h2>Make sure to check out my <a href="/resume">Resume</a>!</h2>
+        </div>
 
     </div>
 {% endblock %}

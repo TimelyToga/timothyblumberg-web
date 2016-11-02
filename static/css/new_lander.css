@@ -73,9 +73,39 @@ h1 {
 }
 
 .pbar {
-    margin: 45px;
-    width: 75%;
+    margin: 50px auto;
+    width: 90%;
     height: 20px;
     position: relative;
-    top: 30px;
+    font-size: 12pt;
 }
+.skill_group_wrapper1 {
+    margin-top: 50px;
+}
+
+.skill_group_wrapper {
+    margin-top: 100px;
+
+}
+
+#sg_languages, #sg_tools {
+    opacity: 0;
+    align-content: center;
+}
+
+#page_closer {
+    padding: 100px 0 0 50px;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+}
+
+#hint_text {
+    display: none;
+    margin: 20px;
+    color: #d6d6d6;
+}
+
