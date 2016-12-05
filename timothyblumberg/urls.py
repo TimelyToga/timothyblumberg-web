@@ -5,8 +5,8 @@ admin.autodiscover()
 import timothyblumberg.settings
 
 urlpatterns = patterns('',
-    url(r'^$', 'timothyblumberg.views.home'),
-    url(r'^new_lander$', 'timothyblumberg.views.new_lander'),
+    url(r'^$', 'timothyblumberg.views.new_lander'),
+    url(r'^old_lander', 'timothyblumberg.views.home'),
     url(r'^skills', 'timothyblumberg.views.skills'),
     url(r'^resume', 'timothyblumberg.views.resume'),
     url(r'^juneway', 'timothyblumberg.views.juneway'),

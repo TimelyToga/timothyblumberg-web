@@ -311,3 +311,10 @@ h4 {
         border-radius: 3px;
     }
 }
+
+#old_version {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    margin: 200px auto 0 auto;
+}
