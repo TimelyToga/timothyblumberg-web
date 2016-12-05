@@ -1,5 +1,94 @@
 {% extends "new_lander.html" %}
 
-{% block main_body %}
-    <h1>Resume</h1>
+{% block scripts %}
+    <script src="/js/resume.js"></script>
+{% endblock scripts %}
+
+{% block main_outside_container %}
+    <h1>Résumé</h1>
+    <h3>Resume's fancier form</h3>
+
+    <div class="">
+        <div class="timeline">
+            <div id="timeline_line"></div>
+            <h2 class="year_tag">2016</h2>
+            <div class="timeline_entry" data-role="main">
+                <div class="timeline_dot"></div>
+                <div class="timeline_content"  data-role="collapsible">
+                    <h2>Some project</h2>
+                    <p class="timeline_entry_p">I am a paragraph of fake text that is written in order to satisfy the needs of the developer to be able to
+proof the coding thing that is currently being worked on. I have been written in order to reflect what a body of
+natural English looks like in the context of the web page, coding assignment, design document,
+proofing form etc. that is currently being checked for things that are rather unrelated to the content of
+the text that is contained in this paragraph. This paragraph is really devoid of meaning,
+but if you are reading this then I congratulate you for your perseverance in consuming useless information.</p>
+                </div>
+            </div>
+            <div class="timeline_entry">
+                <div class="timeline_dot"></div>
+                <div class="timeline_content">
+                    <h2 class="entry_title">Some other project</h2>
+                    <p>The words contained herein are rather only approximately capable of being viewed as
+"information". They are information in the classical sense that data is stored in them,
+but in the technical sense, there are very few practical applications of the things you are reading. From
+this point, I will transition to another discussion of the nature of the what it means for a
+body of text to be labeled to only ever be "filler text". It is absurd to think that
+the entirety of this paragraph is naught but a poorly conceived collection of
+words, whose grandest ambition is to fill the space on a page until richer content
+can be imagined.</p>
+                </div>
+            </div>
+            <div class="timeline_entry">
+                <div class="timeline_dot"></div>
+                <div class="timeline_content">
+                    <h2 class="entry_title">So many projects</h2>
+                    <p>The fact that the creative legwork must be put off to a later date
+so that things deemed more important may be worked on instead is rather preposterous
+to consider. However, it does seem to follow the classic, pragmatic order, that the act
+of creation be left to others deemed more capable. Absurd that we as a society have
+enabled the abstraction of our roles in society to expand to the point that we
+have creators of structure and creators of content.</p>
+                </div>
+            </div>
+
+            <h2 class="year_tag">2015</h2>
+            <div class="timeline_entry">
+                <div class="timeline_dot"></div>
+                <div class="timeline_content">
+                    <h2 class="entry_title">Some project</h2>
+                    <p>I am a paragraph of fake text that is written in order to satisfy the needs of the developer to be able to
+proof the coding thing that is currently being worked on. I have been written in order to reflect what a body of
+natural English looks like in the context of the web page, coding assignment, design document,
+proofing form etc. that is currently being checked for things that are rather unrelated to the content of
+the text that is contained in this paragraph. This paragraph is really devoid of meaning,
+but if you are reading this then I congratulate you for your perseverance in consuming useless information.</p>
+                </div>
+            </div>
+            <div class="timeline_entry">
+                <div class="timeline_dot"></div>
+                <div class="timeline_content">
+                    <h2 class="entry_title">Some other project</h2>
+                    <p>The words contained herein are rather only approximately capable of being viewed as
+"information". They are information in the classical sense that data is stored in them,
+but in the technical sense, there are very few practical applications of the things you are reading. From
+this point, I will transition to another discussion of the nature of the what it means for a
+body of text to be labeled to only ever be "filler text". It is absurd to think that
+the entirety of this paragraph is naught but a poorly conceived collection of
+words, whose grandest ambition is to fill the space on a page until richer content
+can be imagined.</p>
+                </div>
+            </div>
+                <div class="timeline_dot"></div>
+                <div class="timeline_content">
+                    <h2 class="entry_title">So many projects</h2>
+                    <p>The fact that the creative legwork must be put off to a later date
+so that things deemed more important may be worked on instead is rather preposterous
+to consider. However, it does seem to follow the classic, pragmatic order, that the act
+of creation be left to others deemed more capable. Absurd that we as a society have
+enabled the abstraction of our roles in society to expand to the point that we
+have creators of structure and creators of content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

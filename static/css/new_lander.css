@@ -74,7 +74,7 @@ h1 {
 
 .pbar {
     margin: 50px auto;
-    width: 90%;
+    width: 80%;
     height: 20px;
     position: relative;
     font-size: 12pt;
@@ -88,7 +88,7 @@ h1 {
 
 }
 
-#sg_languages, #sg_tools {
+#sg_languages, #sg_tools, #sg_platforms {
     opacity: 0;
     align-content: center;
 }
@@ -109,3 +109,62 @@ h1 {
     color: #d6d6d6;
 }
 
+.timeline {
+    margin: 70px 20px;
+}
+
+#timeline_line {
+    content: '';
+    position: absolute;
+    left: 100px;
+    min-height: 100% !important;
+    height: 200%;
+    width: 4px;
+    background: #d7e4ed;
+}
+
+/*.timeline::before {*/
+     /*!* this is the vertical line *!*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*left: 100px;*/
+    /*min-height: 100% !important;*/
+    /*height: 200%;*/
+    /*width: 4px;*/
+    /*background: #d7e4ed;*/
+/*}*/
+
+.timeline_dot {
+    position: relative;
+    left: 75px;
+    bottom: -25px;
+    width: 14px;
+	height: 14px;
+	background: #619AC2;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.year_tag {
+    color: #9DB1BF;
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.entry_title {
+    margin-top: 0px;
+}
+
+.timeline_content {
+    margin: 0 120px;
+}
+
+.timeline_content > h2:hover {
+    color: slategray;
+    cursor: pointer;
+}
+
+.timeline_content > p{
+    display: none;
+}

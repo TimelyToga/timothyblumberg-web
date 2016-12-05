@@ -46,14 +46,16 @@
             <li><a href="https://medium.com/@Tim_Blumberg">JUNEWAY</a></li>
         </ul>
     </div>
-    <div class="container" id="body_container">
-        {% block main_body %}
-            <div class="intro-text">
-                <p class="animated fadeIn" id="intro-hi">Hi.&nbsp;</p>
-                <p class="animated fadeIn" id="intro-im">I'm&nbsp;</p><br>
-                <p class="animated fadeInUp" id="intro-name">Timothy Blumberg.</p>
-            </div>
-        {% endblock %}
-    </div>
+    {% block main_outside_container %}
+        <div class="container" id="body_container">
+            {% block main_body %}
+                <div class="intro-text">
+                    <p class="animated fadeIn" id="intro-hi">Hi.&nbsp;</p>
+                    <p class="animated fadeIn" id="intro-im">I'm&nbsp;</p><br>
+                    <p class="animated fadeInUp" id="intro-name">Timothy Blumberg.</p>
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock main_outside_container %}
 </body>
 </html>

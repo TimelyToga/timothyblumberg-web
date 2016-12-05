@@ -12,7 +12,7 @@ var curDelay = delayStartingValue;
 // Scroll trigger locations (in pixels)
 var fadeLanguagePos = 160;
 var fadeToolsPos = 600;
-var fadePlatformsPos = 850;
+var fadePlatformsPos = 900;
 
 
 // Current group color
@@ -36,6 +36,10 @@ $(window).on('load', function () {
 
     if(curY > fadeToolsPos && eventCounter == 1){
         showTools();
+    }
+
+    if(curY > fadePlatformsPos && eventCounter == 2){
+        showPlatforms();
     }
 });
 
@@ -84,17 +88,15 @@ function showTools(){
         registerNewBar('latex', .70);
         registerNewBar('git', .93);
         registerNewBar('spark', .45);
-        // registerNewBar('')
     });
 }
 
 function showPlatforms(){
     curGroupColor = '#db5a0a';
-    showGroup('sg_tools', function(){
+    showGroup('sg_platforms', function(){
         registerNewBar('android', .73);
         registerNewBar('web', .68);
         registerNewBar('ios', .25);
-        // registerNewBar('')
     });
 }
 
