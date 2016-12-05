@@ -1,3 +1,15 @@
+body {
+    background-color: #F5F8FA;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #383838;
+}
+
+p {
+    color: #7f8c97;
+}
+
 #nav_list {
     font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma";
     font-size: 14pt;
@@ -7,6 +19,11 @@
     float: right;
     margin: 0 40px;
     -webkit-animation-delay: 1s;
+}
+
+.intro {
+    position: relative;
+    clear:both;
 }
 
 #nav_list > li {
@@ -94,7 +111,7 @@ h1 {
 }
 
 #page_closer {
-    padding: 100px 0 0 50px;
+    padding: 100px 0 50px 50px;
     text-align: center;
 }
 
@@ -111,33 +128,31 @@ h1 {
 
 .timeline {
     margin: 70px 20px;
+    overflow:auto;
+    height: 100%;
 }
 
-#timeline_line {
-    content: '';
-    position: absolute;
-    left: 100px;
-    min-height: 100% !important;
-    height: 200%;
-    width: 4px;
-    background: #d7e4ed;
-}
-
-/*.timeline::before {*/
-     /*!* this is the vertical line *!*/
+/*#timeline_line::before {*/
     /*content: '';*/
     /*position: absolute;*/
     /*left: 100px;*/
-    /*min-height: 100% !important;*/
-    /*height: 200%;*/
+    /*height: 100%;*/
     /*width: 4px;*/
     /*background: #d7e4ed;*/
 /*}*/
 
+#timeline_line {
+    position: absolute;
+    left: 100px;
+    width: 4px;
+    background: #d7e4ed;
+    height: 300%;
+}
+
 .timeline_dot {
     position: relative;
     left: 75px;
-    bottom: -25px;
+    bottom: -45px;
     width: 14px;
 	height: 14px;
 	background: #619AC2;
@@ -156,8 +171,44 @@ h1 {
     margin-top: 0px;
 }
 
+.timeline_content_wrapper {
+    overflow: visible;
+    padding: 0 10px 10px 10px;
+    margin: 0 200px 0 120px;
+    border: #d7e4ed solid 1px;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    overflow: visible;
+    background-color: white;
+}
+
 .timeline_content {
-    margin: 0 120px;
+    overflow: hidden;
+}
+
+.timeline_content_wrapper:after,
+.timeline_content_wrapper:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
+.timeline_content_wrapper:after {
+    top: 27px;
+    border-color: transparent white transparent transparent;
+    border-width: 10px;
+}
+
+.timeline_content_wrapper:before {
+    top: 26px;
+    border-color: transparent #d7e4ed transparent transparent;
+    border-width: 11px;
 }
 
 .timeline_content > h2:hover {
@@ -165,6 +216,98 @@ h1 {
     cursor: pointer;
 }
 
-.timeline_content > p{
+.timeline_entry_description{
     display: none;
+    overflow:hidden
+}
+
+h4 {
+    margin-top: 0;
+    margin-bot: 10px;
+}
+
+.link_box {
+    margin: 20px 0 10px 0;
+    float: left;
+    display: inline-block;
+}
+
+.link_box > ul > li {
+    margin: 0 10px;
+    padding: 6px 14px;
+    float: right;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #7f8c97;
+    color: white;
+    font-size: 12pt;
+}
+
+
+
+.link_box > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.link_box > ul > li:hover {
+    cursor: pointer;
+    background-color: #A4B1BD;
+}
+
+@media only screen and (max-width: 800px){
+    .timeline_content_wrapper {
+        margin: 0 10px 0 120px;
+    }
+
+    .link_box {
+        display: flex;
+        float: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link_box > ul {
+        padding: 0;
+    }
+
+    .link_box > ul > li {
+        margin: 10px 0;
+        width: 100%;
+        padding: 20px 15px;
+        text-align: center;
+        font-size: 16pt;
+        display: block;
+    }
+
+    .intro {
+        margin-top: 100px;
+    }
+    
+    #name_logo {
+        display: block;
+    }
+
+    #nav_list {
+        display: flex;
+        float: none;
+        margin: 10px auto;
+        justify-content: center;
+        position: relative;
+    }
+
+    #nav_list > li {
+        margin: 10px auto;
+        position: relative;
+        float: none;
+        height: 120px;
+        display: block;
+    }
+
+    #nav_list > li > a {
+        padding: 4px 6px 0 6px;
+        border: 1px solid lightslategray;
+        border-radius: 3px;
+    }
 }
