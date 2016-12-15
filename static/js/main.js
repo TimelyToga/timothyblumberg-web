@@ -6,4 +6,12 @@ window.onload=function() {
         $('#bod_wrapper').fadeTo('slow', 1);
     });
 });
+
+    var nameLogo = $("#name_logo");
+
+    nameLogo.hover(function(){
+        nameLogo.fade
+    }, function(){
+
+    })
 }

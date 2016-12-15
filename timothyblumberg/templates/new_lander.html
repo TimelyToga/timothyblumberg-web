@@ -35,7 +35,7 @@
 
     {% block scripts %}
     {% endblock scripts %}
-
+    <script src="js/new_lander.js"/>
     <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,7 +48,9 @@
 </head>
 <body>
     <div class="navbar-container">
-        <a href="/"><img class="animated fadeIn" id="name_logo" src="/img/tb_V3.0.0-01_sm.png"/></a>
+        <a href="/" id="name_logo_cont">
+{#            <img class="animated fadeIn" id="name_logo" src="img/tb_V3.0.0-01_sm.png"/>#}
+        </a>
         <ul class="animated fadeIn" id="nav_list">
             <li><a href="/skills">SKILLS</a></li>
             <li><a href="/resume">RESUME</a></li>
