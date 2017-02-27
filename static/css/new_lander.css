@@ -121,9 +121,9 @@ h1 {
 }
 
 #hint_text {
-    display: none;
     margin: 20px;
     color: #d6d6d6;
+    opacity: 1.0;
 }
 
 .timeline {

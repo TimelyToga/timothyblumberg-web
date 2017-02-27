@@ -10,7 +10,7 @@ var curDelay = delayStartingValue;
 
 
 // Scroll trigger locations (in pixels)
-var fadeLanguagePos = 160;
+var fadeLanguagePos = -1;
 var fadeToolsPos = 600;
 var fadePlatformsPos = 900;
 
@@ -24,7 +24,7 @@ $(window).on('load', function () {
     setTimeout(function(){
         var afterDelayYPos = window.pageYOffset;
         if(afterDelayYPos <= 100){
-            $('#hint_text').fadeIn()
+            $('#hint_text').css({opacity: 0.0, visibility: hidden}).animate({opacity: 1.0})
         }
     }, 2000);
 
@@ -51,8 +51,8 @@ $(window).on('scroll', function() {
 function checkScrollLocation(){
     var curY = window.pageYOffset;
 
-    if(curY >= 1){
-        $("#hint_text").fadeOut(400)
+    if(curY >= 1 && $("#hint_text").css('opacity') == 1){
+        $("#hint_text").css({opacity: 1.0}).animate({opacity: 0.0});
     }
 
     if(curY > fadeLanguagePos && eventCounter == 0) {
@@ -73,7 +73,7 @@ function showSkills(){
         registerNewBar('python', .90);
         registerNewBar('scala', .70);
         registerNewBar('matlab', .60);
-        registerNewBar('c_lang', .30);
+        registerNewBar('c_lang', .65);
         registerNewBar('sql', .65);
         registerNewBar('js', .70);
     });
