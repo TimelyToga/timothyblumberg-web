@@ -1,0 +1,15 @@
+p {
+   font-size: 16pt;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.overhead {
+    margin-top: 80px;
+}

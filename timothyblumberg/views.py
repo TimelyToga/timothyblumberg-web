@@ -40,3 +40,9 @@ def about(request):
     template = loader.get_template('about.html')
     context = RequestContext(request, {})
     return HttpResponse(template.render(context))
+
+
+def chinese(request):
+    template = loader.get_template('chinese.html')
+    context = RequestContext(request, {})
+    return HttpResponse(template.render(context))
