@@ -13,6 +13,7 @@ var curDelay = delayStartingValue;
 var fadeLanguagePos = -1;
 var fadeToolsPos = 600;
 var fadePlatformsPos = 900;
+var fadePersonalSkills = 1100;
 
 
 // Current group color
@@ -40,6 +41,10 @@ $(window).on('load', function () {
 
     if(curY > fadePlatformsPos && eventCounter == 2){
         showPlatforms();
+    }
+
+    if(curY > fadePersonalSkills && eventCounter == 3){
+        showPersonalSkills();
     }
 });
 
@@ -69,13 +74,14 @@ function showSkills(){
     curGroupColor = '#24c3c9';
     showGroup('sg_languages', function(){
         // Animate the skill progress bars
-        registerNewBar('java', .85);
-        registerNewBar('python', .90);
+        registerNewBar('java', .90);
+        registerNewBar('python', .92);
         registerNewBar('scala', .70);
-        registerNewBar('matlab', .60);
-        registerNewBar('c_lang', .65);
-        registerNewBar('sql', .65);
+        registerNewBar('matlab', .65);
+        registerNewBar('c_lang', .68);
+        registerNewBar('sql', .70);
         registerNewBar('js', .70);
+        registerNewBar('sml', .75);
     });
 }
 
@@ -85,18 +91,29 @@ function showTools(){
     showGroup('sg_tools', function(){
         registerNewBar('django', .92);
         registerNewBar('flask', .75);
-        registerNewBar('latex', .70);
+        registerNewBar('latex', .85);
         registerNewBar('git', .93);
         registerNewBar('spark', .45);
+        registerNewBar('nodejs', .33);
+        registerNewBar('react', .28);
     });
 }
 
 function showPlatforms(){
     curGroupColor = '#db5a0a';
     showGroup('sg_platforms', function(){
-        registerNewBar('android', .73);
-        registerNewBar('web', .68);
+        registerNewBar('web', .87);
+        registerNewBar('android', .70);
         registerNewBar('ios', .25);
+    });
+}
+
+function showPersonalSkills(){
+    curGroupColor = '#efe823';
+    showGroup('sg_personal_skills', function(){
+        registerNewBar('dcom', .87);
+        registerNewBar('creativity', .95);
+        registerNewBar('self_determ', .93);
     });
 }
 
