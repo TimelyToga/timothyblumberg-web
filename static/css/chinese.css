@@ -13,3 +13,27 @@ h2 {
 .overhead {
     margin-top: 80px;
 }
+
+.sign-up-button {
+    margin: 0 auto;
+    width: 350px;
+    display: block;
+    text-align: center;
+    background-color: #F22C2C;
+    padding: 8px;
+    font-size: 16pt;
+    border-radius: 4px;
+    color: whitesmoke;
+    box-shadow: 0 5px 10px #888888;;
+}
+
+.sign-up-button:hover {
+    background-color: #EB5050;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 10px #888888;;
+}
+
+.sign-up-button-wrapper {
+    margin: 40px auto;
+}

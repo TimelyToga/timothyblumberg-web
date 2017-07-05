@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^resume', 'timothyblumberg.views.resume'),
     url(r'^juneway', 'timothyblumberg.views.juneway'),
     url(r'^about$', 'timothyblumberg.views.about'),
-    url(r'^chinese', 'timothyblumberg.views.chinese'),
+    url(r'^china', 'timothyblumberg.views.china'),
 
     (r'^css/(?P<path>.*)$', 'django.views.static.serve', {'document_root': timothyblumberg.settings.CSS_DIR}),
     (r'^img/(?P<path>.*)$', 'django.views.static.serve', {'document_root': timothyblumberg.settings.IMG_DIR}),

@@ -318,3 +318,7 @@ h4 {
     text-align: center;
     margin: 200px auto 0 auto;
 }
+
+#china-text {
+     -webkit-animation-delay: 1.2s;
+}

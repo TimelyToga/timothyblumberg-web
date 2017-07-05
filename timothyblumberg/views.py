@@ -42,7 +42,7 @@ def about(request):
     return HttpResponse(template.render(context))
 
 
-def chinese(request):
+def china(request):
     template = loader.get_template('chinese.html')
     context = RequestContext(request, {})
     return HttpResponse(template.render(context))
