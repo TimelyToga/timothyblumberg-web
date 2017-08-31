@@ -7,9 +7,10 @@
     <title>Timothy Blumberg</title>
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="/js/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Optional theme -->
 
@@ -21,7 +22,7 @@
 
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -51,17 +52,22 @@
 </head>
 <body>
     <div class="navbar-container">
-        <a href="/" id="name_logo_cont">
-{#            <img class="animated fadeIn" id="name_logo" src="img/tb_V3.0.0-01_sm.png"/>#}
-        </a>
-        <ul class="animated fadeIn" id="nav_list">
-            <li><a href="/china">CHINA</a></li>
-            <li><a href="/skills">SKILLS</a></li>
-            <li><a href="/resume">RESUME</a></li>
-            <li><a href="https://medium.com/@Tim_Blumberg">BLOG</a></li>
-            <li><a href="https://github.com/TimelyToga">GITHUB</a></li>
-            <li><a href="https://www.behance.net/timothyblumberg">BEHANCE</a></li>
-        </ul>
+        <div id="image_wrapper">
+            <a href="/" id="name_logo_cont">
+                <img class="animated fadeIn" id="name_logo" src="img/tb_V3.0.0-01_sm.png"/>
+            </a>
+        </div>
+        <div id="nav_list_wrapper">
+            <div id="nav_list_button">MENU</div>
+            <ul class="animated fadeIn" id="nav_list">
+                <li><a href="/china">CHINA</a></li>
+                <li><a href="/skills">SKILLS</a></li>
+                <li><a href="/resume">RESUME</a></li>
+                <li><a href="https://medium.com/@Tim_Blumberg">BLOG</a></li>
+                <li><a href="https://github.com/TimelyToga">GITHUB</a></li>
+                <li><a href="https://www.behance.net/timothyblumberg">BEHANCE</a></li>
+            </ul>
+        </div>
     </div>
     {% block main_outside_container %}
         <div class="container" id="body_container">

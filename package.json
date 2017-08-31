@@ -1,0 +1,25 @@
+{
+  "name": "timothyblumberg",
+  "version": "2.2.0",
+  "description": "Timothy Blumberg's Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests, bih\"",
+    "watch_sass": "sass --watch static/sass:static/css --sourcemap=none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimelyToga/timothyblumberg-web.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "django"
+  ],
+  "author": "Timothy Blumberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimelyToga/timothyblumberg-web/issues"
+  },
+  "homepage": "https://github.com/TimelyToga/timothyblumberg-web#readme"
+}
