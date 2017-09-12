@@ -11,8 +11,7 @@ p {
   flex: 1 1 auto;
   font-size: 20pt;
   font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma";
-  border-left: 1px solid #000;
-  border-right: 1px solid #000; }
+}
 
 #nav_list {
   float: right;
@@ -209,7 +208,9 @@ h4 {
   background-color: black;
   color: white;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  display: none;
+}
 
 .link_box > ul > li {
   margin: 0 10px;
@@ -234,6 +235,17 @@ h4 {
   #image_wrapper {
     display: flex;
     justify-content: center; }
+  #nav_list_button {
+      display: block;
+  }
+
+  .intro-text > p {
+      font-size: 36pt
+  }
+
+  #body_container {
+      padding: 30px
+  }
 
   .navbar-container {
     overflow: visible;
@@ -269,7 +281,9 @@ h4 {
     margin: 0 auto;
     justify-content: center;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    display: none;
+}
 
   #nav_list > li {
     margin: 0;

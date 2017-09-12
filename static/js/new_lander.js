@@ -6,6 +6,9 @@
 // THANKS :)
 $(document).ready(function () {
   setImageOne();
+  $("#nav_list_button").click(function() {
+      $("#nav_list").slideToggle(400);
+  });
 });
 
 function setImageOne() {
