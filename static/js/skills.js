@@ -11,8 +11,8 @@ var curDelay = delayStartingValue;
 
 // Scroll trigger locations (in pixels)
 var fadeLanguagePos = -1;
-var fadeToolsPos = 600;
-var fadePlatformsPos = 900;
+var fadeToolsPos = 400;
+var fadePlatformsPos = 950;
 var fadePersonalSkills = 1100;
 
 
@@ -78,7 +78,7 @@ function showSkills(){
         registerNewBar('python', .92);
         registerNewBar('scala', .70);
         registerNewBar('matlab', .65);
-        registerNewBar('c_lang', .68);
+        registerNewBar('c_lang', .78);
         registerNewBar('sql', .70);
         registerNewBar('js', .70);
         registerNewBar('sml', .75);
@@ -89,20 +89,22 @@ function showSkills(){
 function showTools(){
     curGroupColor = '#d136a0';
     showGroup('sg_tools', function(){
-        registerNewBar('django', .92);
+        registerNewBar('django', .93);
         registerNewBar('flask', .75);
         registerNewBar('latex', .85);
         registerNewBar('git', .93);
         registerNewBar('spark', .45);
-        registerNewBar('nodejs', .33);
-        registerNewBar('react', .28);
+        registerNewBar('nodejs', .49);
+        registerNewBar('react', .82);
+        registerNewBar('elm', .35);
+        registerNewBar('ol', .96);
     });
 }
 
 function showPlatforms(){
     curGroupColor = '#db5a0a';
     showGroup('sg_platforms', function(){
-        registerNewBar('web', .87);
+        registerNewBar('web', .94);
         registerNewBar('android', .70);
         registerNewBar('ios', .25);
     });
