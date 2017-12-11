@@ -11,7 +11,8 @@ p {
   flex: 1 1 auto;
   font-size: 20pt;
   font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma";
-}
+  border-left: 1px solid #000;
+  border-right: 1px solid #000; }
 
 #nav_list {
   float: right;
@@ -42,8 +43,7 @@ p {
   font-size: 20pt; }
 
 #nav_list > li:hover > * {
-  color: darkslategray;
-  font-weight: bold; }
+  color: darkslategray; }
 
 #name_logo {
   height: 120px;
@@ -117,14 +117,6 @@ h1 {
   overflow: auto;
   height: 100%; }
 
-/*#timeline_line::before {*/
-/*content: '';*/
-/*position: absolute;*/
-/*left: 100px;*/
-/*height: 100%;*/
-/*width: 4px;*/
-/*background: #d7e4ed;*/
-/*}*/
 #timeline_line {
   position: absolute;
   left: 100px;
@@ -208,9 +200,7 @@ h4 {
   background-color: black;
   color: white;
   width: 100%;
-  text-align: center;
-  display: none;
-}
+  text-align: center; }
 
 .link_box > ul > li {
   margin: 0 10px;
@@ -232,20 +222,12 @@ h4 {
   background-color: #A4B1BD; }
 
 @media only screen and (max-width: 800px) {
+  #nav_list_button {
+    display: block; }
+
   #image_wrapper {
     display: flex;
     justify-content: center; }
-  #nav_list_button {
-      display: block;
-  }
-
-  .intro-text > p {
-      font-size: 36pt
-  }
-
-  #body_container {
-      padding: 30px
-  }
 
   .navbar-container {
     overflow: visible;
@@ -281,9 +263,7 @@ h4 {
     margin: 0 auto;
     justify-content: center;
     position: relative;
-    width: 100%;
-    display: none;
-}
+    width: 100%; }
 
   #nav_list > li {
     margin: 0;

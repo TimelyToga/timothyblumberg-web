@@ -54,7 +54,6 @@ p {
 
 #nav_list > li:hover > * {
     color: darkslategray;
-    font-weight: bold;
 }
 
 #name_logo {
@@ -145,15 +144,6 @@ h1 {
     overflow:auto;
     height: 100%;
 }
-
-/*#timeline_line::before {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*left: 100px;*/
-    /*height: 100%;*/
-    /*width: 4px;*/
-    /*background: #d7e4ed;*/
-/*}*/
 
 #timeline_line {
     position: absolute;
@@ -252,6 +242,7 @@ h4 {
    color: white;
    width: 100%;
    text-align:center;
+   display: none;
 }
 
 .link_box > ul > li {
@@ -279,6 +270,11 @@ h4 {
 }
 
 @media only screen and (max-width: 800px){
+    
+    #nav_list_button {
+        display: block;
+    }
+
     #image_wrapper {
         display: flex;
         justify-content: center;
