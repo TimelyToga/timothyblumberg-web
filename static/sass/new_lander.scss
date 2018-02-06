@@ -16,8 +16,6 @@ p {
     flex: 1 1 auto;
     font-size: 20pt;
     font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma";
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
 }
 
 #nav_list {
@@ -270,7 +268,20 @@ h4 {
 }
 
 @media only screen and (max-width: 800px){
-    
+
+    .intro-text > p {
+        font-size: 4.5em;
+    }
+
+    #body_container {
+        padding: 20px;
+    }
+
+    #nav_list_wrapper {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+
     #nav_list_button {
         display: block;
     }
@@ -313,7 +324,7 @@ h4 {
     .intro {
         margin-top: 100px;
     }
-    
+
     #name_logo_wrapper {
     }
 
@@ -324,6 +335,7 @@ h4 {
         justify-content: center;
         position: relative;
         width: 100%;
+        display:none;
     }
 
     #nav_list > li {

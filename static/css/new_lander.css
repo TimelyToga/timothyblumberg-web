@@ -10,9 +10,7 @@ p {
 #nav_list_wrapper {
   flex: 1 1 auto;
   font-size: 20pt;
-  font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma";
-  border-left: 1px solid #000;
-  border-right: 1px solid #000; }
+  font-family: "JosefineSans-Regular", "Helvetica Neue", "Tahoma"; }
 
 #nav_list {
   float: right;
@@ -200,7 +198,8 @@ h4 {
   background-color: black;
   color: white;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .link_box > ul > li {
   margin: 0 10px;
@@ -222,6 +221,16 @@ h4 {
   background-color: #A4B1BD; }
 
 @media only screen and (max-width: 800px) {
+  .intro-text > p {
+    font-size: 4.5em; }
+
+  #body_container {
+    padding: 20px; }
+
+  #nav_list_wrapper {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000; }
+
   #nav_list_button {
     display: block; }
 
@@ -263,7 +272,8 @@ h4 {
     margin: 0 auto;
     justify-content: center;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    display: none; }
 
   #nav_list > li {
     margin: 0;
@@ -288,3 +298,5 @@ h4 {
 
 #image_wrapper {
   flex: 0 1 auto; }
+
+/*# sourceMappingURL=new_lander.css.map */
