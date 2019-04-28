@@ -1,0 +1,52 @@
+{% extends "new_lander.html" %}
+
+{% block scripts %}
+    <script src="/js/progressbar.min.js"></script>
+    <script src="/js/skills.js"></script>
+{% endblock scripts %}
+
+{% block main_body %}
+    <h1>Technical Skills</h1>
+    <h3>of which I have many</h3>
+    <h4 id="hint_text">Scroll Down for more!</h4>
+
+    <div class="center">
+        <div class="skill_group_wrapper1" id="sg_languages">
+            <h2>Languages</h2>
+            <div class="pbar" id="python">Python</div>
+            <div class="pbar" id="c_lang">C / C++</div>
+            <div class="pbar" id="java">Java / JavaFX</div>
+            <div class="pbar" id="scala">Scala</div>
+            <div class="pbar" id="sml">SML</div>
+            <div class="pbar" id="js">JavaScript</div>
+            <div class="pbar" id="matlab">Matlab</div>
+            <div class="pbar" id="sql">SQL</div>
+        </div>
+
+        <div class="skill_group_wrapper" id="sg_tools">
+            <h2>Tools / Frameworks</h2>
+            <div class="pbar" id="django">Django</div>
+            <div class="pbar" id="flask">Flask</div>
+            <div class="pbar" id="latex">LaTeX</div>
+            <div class="pbar" id="git">Git</div>
+            <div class="pbar" id="spark">Spark</div>
+            <div class="pbar" id="nodejs">Node.js</div>
+            <div class="pbar" id="react">React</div>
+            <div class="pbar" id="elm">Elm</div>
+            <div class="pbar" id="ol">Open Layers</div>
+        </div>
+
+        <div class="skill_group_wrapper" id="sg_platforms">
+            <h2>Platforms</h2>
+            <div class="pbar" id="web">Web</div>
+            <div class="pbar" id="android">Android</div>
+            <div class="pbar" id="ios">iOS</div>
+        </div>
+
+        <div id="page_closer">
+           <p>These skill estimates are bested on nothing more than my assessment of my abilities. Take it or leave it.</p>
+            <h2>Make sure to check out my <a href="/resume">Resume</a>!</h2>
+        </div>
+
+    </div>
+{% endblock %}
